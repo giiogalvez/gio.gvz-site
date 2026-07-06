@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cybersecurity portfolio for Giovanni Galvez — intelligence, security operations, threat research, homelab engineering, and practical defense projects." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Giovanni Galvez | Cybersecurity Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Giovanni Galvez home">
+        <span class="brand-mark" aria-hidden="true">GG</span>
+        <span class="brand-copy">
+          <span class="brand-name">Giovanni Galvez</span>
+          <span class="brand-line">Cybersecurity Portfolio</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#lab">Lab</a>
+        <a href="#writing">Briefings</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="pulse-dot"></span> Intelligence-led security, built in the real world</p>
+          <h1>Cyber defense that thinks like an operator, hunts like an analyst, and explains like a teacher.</h1>
+          <p class="hero-lede">
+            I build security programs, investigate threats, harden systems, and turn complex cyber concepts into clear action. My work sits where intelligence analysis, SOC operations, offensive testing, and practical engineering meet.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View mission projects</a>
+            <a class="button button-ghost" href="#contact">Start a conversation</a>
+          </div>
+          <div class="trust-row" aria-label="Professional highlights">
+            <span>USMC Intelligence</span>
+            <span>Industrial Security</span>
+            <span>Security+</span>
+            <span>Threat Research</span>
+          </div>
+        </div>
+
+        <div class="hero-panel" data-reveal>
+          <div class="orbital-card">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="operator-card">
+              <div class="operator-topline">
+                <span class="status-light"></span>
+                <span>Live Portfolio Console</span>
+              </div>
+              <div class="terminal-window" aria-label="Portfolio terminal animation">
+                <div class="terminal-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <pre id="terminal-output">$ ./profile --load operator
+loading intelligence background... done
+loading security operations... done
+loading project evidence... done
+ready.</pre>
+              </div>
+              <div class="signal-grid" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics strip" aria-label="Key metrics" data-reveal>
+        <article>
+          <strong>1,100+</strong>
+          <span>personnel security actions supported</span>
+        </article>
+        <article>
+          <strong>5,500+</strong>
+          <span>classified items tracked and protected</span>
+        </article>
+        <article>
+          <strong>24/7</strong>
+          <span>operator mindset across detection and response</span>
+        </article>
+        <article>
+          <strong>TSS</strong>
+          <span>homelab, research, and builder brand</span>
+        </article>
+      </section>
+
+      <section id="work" class="section section-grid work-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Experience architecture</p>
+          <h2>A career built across intelligence, defense, security operations, and hands-on engineering.</h2>
+        </div>
+        <div class="timeline" data-reveal>
+          <article class="timeline-item">
+            <span class="timeline-kicker">Foundation</span>
+            <h3>USMC Intelligence & Security Management</h3>
+            <p>Produced operational reporting, coordinated UAS support, briefed leadership, and managed security responsibilities for large personnel populations in high-accountability environments.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-kicker">Defense Industry</span>
+            <h3>Industrial Security Analyst</h3>
+            <p>Managed classified accountability, PERSEC workflows, DISS visit verification, safe combination changes, inventories, briefings, and compliance-driven security processes.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-kicker">Technical Growth</span>
+            <h3>Cybersecurity Student & Builder</h3>
+            <p>Built Linux-first labs, Windows Server Active Directory environments, Palo Alto firewall segmentation, CTI tooling, and CTF practice pipelines to turn theory into repeatable skill.</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-kicker">Forward Edge</span>
+            <h3>Threat Research, SOC Thinking & Practical Defense</h3>
+            <p>Focused on detection, exposure management, tactical threat intelligence, vulnerability validation, and communicating risk in a way decision-makers can actually use.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-heading narrow" data-reveal>
+          <p class="eyebrow">Selected operations</p>
+          <h2>Portfolio projects that look like real work, not classroom filler.</h2>
+          <p>Each project is written like a mission brief: objective, execution, tooling, evidence, and business value.</p>
+        </div>
+
+        <div class="project-filters" data-reveal aria-label="Project filters">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="defense">Defense</button>
+          <button class="chip" data-filter="cti">Threat Intel</button>
+          <button class="chip" data-filter="infra">Infrastructure</button>
+          <button class="chip" data-filter="offense">Offense</button>
+        </div>
+
+        <div class="project-grid" data-reveal>
+          <article class="project-card" data-category="cti defense">
+            <div class="card-topline"><span>CTI</span><span>Operational Briefing</span></div>
+            <h3>Threat Intelligence Daily Console</h3>
+            <p>A desktop intelligence workflow that aggregates trusted security feeds, converts noise into analyst-ready notes, and supports daily briefings.</p>
+            <ul>
+              <li>Feed collection and triage logic</li>
+              <li>Analyst notes and source tracking</li>
+              <li>Executive-ready summary format</li>
+            </ul>
+            <button class="text-button" data-modal="cti-console">Read brief</button>
+          </article>
+
+          <article class="project-card" data-category="infra defense">
+            <div class="card-topline"><span>Lab</span><span>Firewall / Segmentation</span></div>
+            <h3>TSS Homelab Security Architecture</h3>
+            <p>A practical enterprise-style lab with Palo Alto routing, isolated VLANs, Windows AD, Linux hosts, security monitoring, and controlled attack paths.</p>
+            <ul>
+              <li>WAN/LAN/isolation zoning</li>
+              <li>AD + Linux hybrid environment</li>
+              <li>Detection and validation playground</li>
+            </ul>
+            <button class="text-button" data-modal="tss-lab">Read brief</button>
+          </article>
+
+          <article class="project-card" data-category="offense infra">
+            <div class="card-topline"><span>Hardware</span><span>Field Toolkit</span></div>
+            <h3>All-in-One Cyber Handheld Concept</h3>
+            <p>A compact operator device concept combining Linux tooling, RF modules, NFC workflows, Wi-Fi analysis, LoRa, BLE, IR, and field usability constraints.</p>
+            <ul>
+              <li>CM5 compute baseline</li>
+              <li>Proxmark-class NFC path</li>
+              <li>RF-aware mechanical planning</li>
+            </ul>
+            <button class="text-button" data-modal="handheld">Read brief</button>
+          </article>
+
+          <article class="project-card" data-category="defense cti">
+            <div class="card-topline"><span>SOC</span><span>Detection Thinking</span></div>
+            <h3>Creator Account Protection Framework</h3>
+            <p>A scalable security service model for influencers and creators exposed to account takeover, doxxing, impersonation, phishing, and stalking risk.</p>
+            <ul>
+              <li>Risk intake and OSINT hygiene</li>
+              <li>Account hardening checklist</li>
+              <li>Monthly monitoring model</li>
+            </ul>
+            <button class="text-button" data-modal="creator-shield">Read brief</button>
+          </article>
+
+          <article class="project-card" data-category="infra defense">
+            <div class="card-topline"><span>Program</span><span>Leadership</span></div>
+            <h3>Cyber Club & CTF Program Proposal</h3>
+            <p>A campus cybersecurity development plan centered on peer mentoring, NCL practice, homelabs, student leadership, and real conference exposure.</p>
+            <ul>
+              <li>Student skills pipeline</li>
+              <li>CTF practice model</li>
+              <li>Hardware and advisor asks</li>
+            </ul>
+            <button class="text-button" data-modal="campus-program">Read brief</button>
+          </article>
+
+          <article class="project-card" data-category="offense defense">
+            <div class="card-topline"><span>CTF</span><span>Applied Problem Solving</span></div>
+            <h3>Capture-the-Flag Field Notes</h3>
+            <p>A collection of practical writeups covering Linux privilege escalation, web proxy abuse, NFC analysis, Wi-Fi challenge workflows, and reverse engineering.</p>
+            <ul>
+              <li>Methodology-first writeups</li>
+              <li>Evidence screenshots and commands</li>
+              <li>Lessons learned after action</li>
+            </ul>
+            <button class="text-button" data-modal="ctf-notes">Read brief</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="lab" class="section lab-section section-grid">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">The lab is the proof</p>
+          <h2>Built like a miniature enterprise, abused like a training range, documented like a client engagement.</h2>
+          <p>Great cybersecurity portfolios show receipts. This section turns the lab into a story: what exists, why it exists, and what it proves.</p>
+        </div>
+        <div class="lab-map" data-reveal aria-label="Homelab architecture diagram">
+          <div class="map-node internet">Internet</div>
+          <div class="map-line"></div>
+          <div class="map-node firewall">PA-850<br><span>Policy / NAT / Zones</span></div>
+          <div class="map-branches">
+            <div class="branch">
+              <div class="map-node">LAN<br><span>192.168.1.0/24</span></div>
+              <small>Workstations • Admin • Services</small>
+            </div>
+            <div class="branch">
+              <div class="map-node">Isolation<br><span>10.10.10.0/24</span></div>
+              <small>Testing • Malware-safe patterns • CTF</small>
+            </div>
+            <div class="branch">
+              <div class="map-node">AD Lab<br><span>triadic.local</span></div>
+              <small>Windows Server • DNS/DHCP • SMB</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section capabilities-section">
+        <div class="section-heading narrow" data-reveal>
+          <p class="eyebrow">Capabilities</p>
+          <h2>Where I create value.</h2>
+        </div>
+        <div class="capability-grid" data-reveal>
+          <article>
+            <span class="cap-icon">01</span>
+            <h3>SOC & Detection</h3>
+            <p>Alert triage, log review, incident notes, containment thinking, escalation quality, and meaningful detection tuning.</p>
+          </article>
+          <article>
+            <span class="cap-icon">02</span>
+            <h3>Threat Intelligence</h3>
+            <p>Collection plans, source validation, actor/TTP mapping, briefings, executive summaries, and intelligence-to-action workflows.</p>
+          </article>
+          <article>
+            <span class="cap-icon">03</span>
+            <h3>Vulnerability Validation</h3>
+            <p>Turning scanner output into evidence, impact, risk, remediation priority, and clear stakeholder communication.</p>
+          </article>
+          <article>
+            <span class="cap-icon">04</span>
+            <h3>Infrastructure Security</h3>
+            <p>Linux, Windows Server, AD, routing, VLANs, firewall rules, VPN concepts, and practical segmented lab design.</p>
+          </article>
+          <article>
+            <span class="cap-icon">05</span>
+            <h3>Offensive Methodology</h3>
+            <p>Recon, enumeration, web testing, privilege escalation, password attacks in controlled environments, and CTF writeups.</p>
+          </article>
+          <article>
+            <span class="cap-icon">06</span>
+            <h3>Security Communication</h3>
+            <p>Clear reports, briefings, diagrams, training material, and translating technical findings into decisions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="section writing-section section-grid">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Briefings & teaching</p>
+          <h2>Cybersecurity is only useful when people understand what to do next.</h2>
+        </div>
+        <div class="briefing-list" data-reveal>
+          <a href="#contact">
+            <span>Briefing</span>
+            <strong>How creators get hacked before they know they are targets</strong>
+            <em>Account takeover, OSINT exposure, phishing, and recovery planning.</em>
+          </a>
+          <a href="#contact">
+            <span>Workshop</span>
+            <strong>Building a home SOC without pretending it is enterprise</strong>
+            <em>Affordable lab design, honest limitations, and repeatable learning loops.</em>
+          </a>
+          <a href="#contact">
+            <span>Field Notes</span>
+            <strong>What CTFs actually teach when you stop chasing flags</strong>
+            <em>Methodology, documentation, failure, and skill transfer.</em>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" data-reveal>
+        <div class="contact-card">
+          <p class="eyebrow">Open channel</p>
+          <h2>Need a security analyst who can think, build, brief, and execute?</h2>
+          <p>Reach out for SOC analyst roles, threat intelligence work, security operations, vulnerability validation, lab collaborations, talks, or practical cyber projects.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:you@example.com?subject=Cybersecurity%20Portfolio%20Inquiry">Email me</a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/giovanniagalvez" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button button-ghost" href="assets/resume-placeholder.txt">Resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Giovanni Galvez. Built for clarity, credibility, and cyber work that can be proven.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </div>
+
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">×</button>
+      <p class="eyebrow" id="modal-kicker">Project brief</p>
+      <h2 id="modal-title">Project title</h2>
+      <p id="modal-body">Project body</p>
+      <div class="modal-meta" id="modal-meta"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
