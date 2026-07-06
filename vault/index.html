@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Operator Vault for Giovanni Galvez cybersecurity portfolio evidence and safe training material." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Operator Vault | Giovanni Galvez</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="vault-page">
+  <div class="site-shell">
+    <header class="site-header" data-reveal>
+      <a class="brand" href="../index.html#top" aria-label="Giovanni Galvez home">
+        <span class="brand-mark" aria-hidden="true">GG</span>
+        <span class="brand-copy">
+          <span class="brand-name">Giovanni Galvez</span>
+          <span class="brand-line">Operator Vault</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Vault navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#vault">Vault Gate</a>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="vault-hero" data-reveal>
+        <div class="vault-lock-panel" data-vault-locked>
+          <p class="eyebrow">Locked evidence locker</p>
+          <h1>Operator Vault</h1>
+          <p class="hero-lede">This page is gated by the portfolio CTF. Find the credentials hidden in the homepage source, stylesheet, and script. This is not real authentication; it is a skill-check and presentation layer for sanitized proof.</p>
+          <form class="vault-login" autocomplete="off" data-vault-form>
+            <label>
+              <span>Username</span>
+              <input name="username" type="text" placeholder="operator id" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input name="password" type="password" placeholder="passphrase" required />
+            </label>
+            <button class="button button-primary" type="submit">Unlock vault</button>
+            <p class="vault-message" role="status" aria-live="polite">Hint: inspect the main page first.</p>
+          </form>
+        </div>
+
+        <div class="vault-content-panel" data-vault-unlocked hidden>
+          <p class="eyebrow">Access granted</p>
+          <h1>Proof Locker</h1>
+          <p class="hero-lede">Use this area for redacted, recruiter-safe evidence: score reports, writeups, screenshots, build logs, proof-of-concept notes, and safe threat-intelligence training material.</p>
+
+          <div class="vault-report-grid">
+            <a class="vault-report-card" href="reports/ctf-results.html">
+              <span>CTF Proof</span>
+              <h3>CTF Result Reports & Field Notes</h3>
+              <p>Place scoreboards, certificates, challenge notes, command evidence, and redacted screenshots here.</p>
+              <em>Open report →</em>
+            </a>
+
+            <a class="vault-report-card" href="reports/halehound-build-log.html">
+              <span>Hardware</span>
+              <h3>ESP32 HaleHound Build Log</h3>
+              <p>Flashing workflow, validation notes, device photos, and lessons that feed the larger handheld concept.</p>
+              <em>Open report →</em>
+            </a>
+
+            <a class="vault-report-card" href="reports/dark-web-training.html">
+              <span>Threat Intel</span>
+              <h3>Safe Dark Web Threat Intel Training</h3>
+              <p>Legal, simulated analyst training: OPSEC, collection discipline, source grading, and reporting format.</p>
+              <em>Open report →</em>
+            </a>
+
+            <a class="vault-report-card" href="reports/tss-lab-evidence.html">
+              <span>Infrastructure</span>
+              <h3>TSS Homelab Evidence Checklist</h3>
+              <p>Firewall screenshots, VLAN diagrams, AD proof, Linux screenshots, and detection-lab artifacts.</p>
+              <em>Open report →</em>
+            </a>
+
+            <a class="vault-report-card" href="reports/creator-shield-poc.html">
+              <span>Service PoC</span>
+              <h3>Creator Shield Proof of Concept</h3>
+              <p>Risk intake, public exposure checklists, account hardening evidence, and service delivery samples.</p>
+              <em>Open report →</em>
+            </a>
+
+            <a class="vault-report-card" href="../assets/evidence/ctf-results-placeholder.svg" target="_blank" rel="noreferrer">
+              <span>Evidence</span>
+              <h3>Screenshot Drop Zone</h3>
+              <p>Replace placeholders in <code>assets/evidence/</code> with PNGs of your real proof.</p>
+              <em>Open placeholder →</em>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Giovanni Galvez. Sanitized evidence only. Real secrets stay off public repos.</p>
+      <a href="../index.html#top">Back home</a>
+    </footer>
+  </div>
+
+  <script src="../vault.js"></script>
+</body>
+</html>

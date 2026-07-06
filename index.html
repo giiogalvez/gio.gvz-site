@@ -32,7 +32,7 @@
         <a href="#projects">Projects</a>
         <a href="#lab">Lab</a>
         <a href="#writing">Briefings</a>
-        <a href="members/">Members</a>
+        <a href="#vault">Vault</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </header>
@@ -74,7 +74,9 @@
 loading intelligence background... done
 loading security operations... done
 loading project evidence... done
-ready.</pre>
+ready.
+<!-- hint: source rarely lies -->
+</pre>
               </div>
               <div class="signal-grid" aria-hidden="true">
                 <span></span><span></span><span></span><span></span>
@@ -318,6 +320,49 @@ ready.</pre>
         </div>
       </section>
 
+
+      <!--
+        OPERATOR VAULT CTF CLUE 01/03:
+        The username is the brand plus the role, lowercase, joined by an underscore.
+        brand = TSS. role = operator.
+      -->
+      <section id="vault" class="section vault-section" data-reveal>
+        <div class="vault-card">
+          <div class="vault-copy">
+            <p class="eyebrow">Operator Vault</p>
+            <h2>Find the credentials. Prove you can inspect what others ignore.</h2>
+            <p>
+              This is a portfolio CTF gate, not real authentication. The username and password are hidden across the page source, stylesheet, and scripts. Unlock it to reach redacted reports, CTF proof, build notes, and safe training material.
+            </p>
+            <p class="vault-warning">
+              Anything truly private should never live in a public GitHub Pages repo. This vault is for gamified proof, sanitized screenshots, and recruiter-safe evidence.
+            </p>
+          </div>
+
+          <form class="vault-login" id="vault-login-form" autocomplete="off" data-vault-form>
+            <label>
+              <span>Username</span>
+              <input id="vault-username" name="username" type="text" placeholder="operator id" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input id="vault-password" name="password" type="password" placeholder="passphrase" required data-clue="CTF clue 02/03: the second half starts after receipts_or" />
+            </label>
+            <button class="button button-primary" type="submit">Unlock vault</button>
+            <p class="vault-message" id="vault-message" role="status" aria-live="polite">Hint: start with View Source. Then inspect the CSS. Then check the console.</p>
+          </form>
+
+          <div class="vault-unlocked" id="vault-unlocked" hidden>
+            <div>
+              <span class="status-light"></span>
+              <strong>Vault unlocked</strong>
+              <p>Session access granted. Open the proof locker.</p>
+            </div>
+            <a class="button button-ghost" href="vault/">Enter vault</a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="section contact-section" data-reveal>
         <div class="contact-card">
           <p class="eyebrow">Open channel</p>
@@ -352,5 +397,6 @@ ready.</pre>
   </div>
 
   <script src="app.js"></script>
+  <script src="vault.js"></script>
 </body>
 </html>

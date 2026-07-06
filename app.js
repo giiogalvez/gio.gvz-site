@@ -36,6 +36,7 @@ const terminalLines = [
   'mapping homelab architecture... done',
   'indexing project evidence... done',
   'compiling briefing notes... done',
+  'operator vault clue: inspect source, css, console',
   'ready: investigate | harden | brief | build'
 ];
 

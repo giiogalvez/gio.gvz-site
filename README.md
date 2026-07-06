@@ -1,49 +1,91 @@
-# Giovanni Galvez Cybersecurity Portfolio — v2
+# Giovanni Galvez Cybersecurity Portfolio — v3 Operator Vault
 
-This is a static cybersecurity portfolio site built for GitHub Pages or any static host.
+This is a static cybersecurity portfolio site with a built-in CTF-style Operator Vault.
 
-## What changed in v2
+## What changed in v3
 
-- Reworked the top metrics to better match the current SOC/CTI/security analyst track.
-- Replaced the premature **All-in-One Cyber Handheld Concept** project card with **ESP32 HaleHound Field Toolkit**, while still keeping the all-in-one handheld as design-log evidence.
-- Added an evidence gallery inside the `Read brief` modal.
-- Added placeholder evidence assets under `assets/evidence/`.
-- Added a `members/` placeholder page without fake password collection.
+- Added an **Operator Vault** section to the homepage.
+- Added a CTF-style username/password gate.
+- Added a `/vault/` proof locker page.
+- Added placeholder report pages for:
+  - CTF result reports and field notes
+  - ESP32 HaleHound build log
+  - Safe dark web threat-intelligence training material
+  - TSS homelab evidence checklist
+  - Creator Shield proof of concept
+- Removed the fake `members/` page so the site does not pretend to have real backend authentication.
 
-## Adding proof screenshots
+## CTF credentials
 
-PNG screenshots work well. Put them in:
+The credentials are intentionally hidden across the source, CSS, and JavaScript.
+
+- Username: `tss_operator`
+- Password: `receipts_or_it_didnt_happen`
+
+The clues are placed in:
+
+- `index.html` source comments
+- `style.css` comments
+- browser console via `vault_hint()`
+
+## Important security warning
+
+This is **not real authentication**. GitHub Pages is static hosting. Anyone determined enough can inspect files, source code, scripts, or direct paths.
+
+Use the vault only for:
+
+- Redacted proof
+- Sanitized screenshots
+- CTF score reports you are comfortable making public
+- Safe, legal training material
+- Portfolio storytelling
+
+Do **not** place private files, credentials, real sensitive data, or anything illegal inside this repo.
+
+For real private member access later, use Cloudflare Access, Netlify Identity, Firebase Auth, Supabase Auth, Clerk, Auth0, or a custom backend.
+
+## Where to add screenshots
+
+Put image evidence here:
 
 ```text
 assets/evidence/
 ```
 
-Then update the matching project inside `app.js`:
+Then update links in:
 
-```js
-evidence: [
-  {
-    type: 'image',
-    src: 'assets/evidence/my-ctf-result.png',
-    title: 'CTF Result Report',
-    caption: 'Cyber Skyline result report, redacted where needed.'
-  }
-]
+```text
+app.js
+vault/index.html
+vault/reports/*.html
 ```
 
-PDFs also work. Use `type: 'document'` and point `href` at the PDF.
+## How to preview locally
 
-## Important security note
+Open `index.html` in your browser.
 
-Do not upload private keys, live flags, credentials, personal addresses, classified material, proprietary work, or anything that violates a CTF/event rule. Redact names, emails, IPs, flags, client data, and internal-only details.
+For the cleanest local preview, run:
 
-## Member login note
+```bash
+python3 -m http.server 8080
+```
 
-GitHub Pages is static hosting. A page like `members/index.html` can exist, but real authentication requires an external service or a different host. Good options:
+Then open:
 
-- Cloudflare Pages + Cloudflare Access
-- Netlify + password protection / identity
-- Vercel + Clerk/Auth0/Supabase/Firebase
-- A small backend/API behind the static frontend
+```text
+http://localhost:8080
+```
 
-For a subdomain like `members.giogalvez.com`, create a dedicated Pages repo or host, add the custom domain in its Pages settings, and create a DNS CNAME from `members` to your GitHub Pages default domain.
+## How to deploy on GitHub Pages
+
+Upload the full contents of this folder to your GitHub Pages repository. Your vault will be available at:
+
+```text
+/vault/
+```
+
+Example:
+
+```text
+https://giiogalvez.github.io/gio.gvz-site/vault/
+```
