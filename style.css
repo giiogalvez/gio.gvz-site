@@ -716,7 +716,7 @@ pre {
 
 .map-branches {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.85rem;
   margin-top: 1rem;
 }
@@ -832,8 +832,8 @@ pre {
 
 .modal-panel {
   position: relative;
-  width: min(100%, 700px);
-  max-height: min(82vh, 720px);
+  width: min(100%, 860px);
+  max-height: min(86vh, 780px);
   overflow: auto;
   padding: clamp(1.3rem, 4vw, 2.4rem);
   border: 1px solid rgba(95,247,210,0.3);
@@ -873,6 +873,79 @@ pre {
   border-radius: 999px;
   color: var(--muted);
   font-size: 0.82rem;
+}
+
+
+.modal-evidence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.35rem;
+}
+
+.evidence-card {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.72rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.evidence-card:hover,
+.evidence-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(95,247,210,0.48);
+  outline: none;
+}
+
+.evidence-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 13px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.18);
+}
+
+.evidence-card strong {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.evidence-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.evidence-document {
+  min-height: 190px;
+  align-content: center;
+}
+
+.document-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  color: #021310 !important;
+  background: var(--accent);
+  font-weight: 950;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.is-disabled {
+  opacity: 0.48;
+  pointer-events: none;
 }
 
 [data-reveal] {
@@ -925,6 +998,10 @@ pre {
 }
 
 @media (max-width: 760px) {
+  .modal-evidence {
+    grid-template-columns: 1fr;
+  }
+
   .site-header {
     top: 8px;
     border-radius: 28px;

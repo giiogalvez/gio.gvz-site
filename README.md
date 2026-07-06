@@ -1,21 +1,49 @@
-# Giovanni Galvez Cybersecurity Portfolio
+# Giovanni Galvez Cybersecurity Portfolio — v2
 
-A static, responsive cybersecurity portfolio website built with plain HTML, CSS, and JavaScript. No build tools, frameworks, or external dependencies are required.
+This is a static cybersecurity portfolio site built for GitHub Pages or any static host.
 
-## Files
+## What changed in v2
 
-- `index.html` — page structure and content
-- `style.css` — full responsive visual design
-- `app.js` — mobile nav, reveal animation, project filtering, modal briefs, terminal animation
-- `assets/favicon.svg` — local favicon
-- `assets/resume-placeholder.txt` — placeholder instructions for your real resume
+- Reworked the top metrics to better match the current SOC/CTI/security analyst track.
+- Replaced the premature **All-in-One Cyber Handheld Concept** project card with **ESP32 HaleHound Field Toolkit**, while still keeping the all-in-one handheld as design-log evidence.
+- Added an evidence gallery inside the `Read brief` modal.
+- Added placeholder evidence assets under `assets/evidence/`.
+- Added a `members/` placeholder page without fake password collection.
 
-## How to use
+## Adding proof screenshots
 
-Open `index.html` in a browser to preview locally.
+PNG screenshots work well. Put them in:
 
-To publish, upload the entire folder contents to your web host. Make sure `index.html`, `style.css`, `app.js`, and the `assets` folder stay together.
+```text
+assets/evidence/
+```
 
-## Important credibility note
+Then update the matching project inside `app.js`:
 
-Some copy is intentionally written as a high-end portfolio direction. Before publishing, replace any line that is aspirational, exaggerated, or not yet true with a claim you can prove through screenshots, writeups, reports, repos, or references.
+```js
+evidence: [
+  {
+    type: 'image',
+    src: 'assets/evidence/my-ctf-result.png',
+    title: 'CTF Result Report',
+    caption: 'Cyber Skyline result report, redacted where needed.'
+  }
+]
+```
+
+PDFs also work. Use `type: 'document'` and point `href` at the PDF.
+
+## Important security note
+
+Do not upload private keys, live flags, credentials, personal addresses, classified material, proprietary work, or anything that violates a CTF/event rule. Redact names, emails, IPs, flags, client data, and internal-only details.
+
+## Member login note
+
+GitHub Pages is static hosting. A page like `members/index.html` can exist, but real authentication requires an external service or a different host. Good options:
+
+- Cloudflare Pages + Cloudflare Access
+- Netlify + password protection / identity
+- Vercel + Clerk/Auth0/Supabase/Firebase
+- A small backend/API behind the static frontend
+
+For a subdomain like `members.giogalvez.com`, create a dedicated Pages repo or host, add the custom domain in its Pages settings, and create a DNS CNAME from `members` to your GitHub Pages default domain.

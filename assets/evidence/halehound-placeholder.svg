@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="ESP32 HaleHound">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081527"/>
+      <stop offset="0.52" stop-color="#0d2138"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <radialGradient id="r" cx=".25" cy=".18" r=".75">
+      <stop offset="0" stop-color="#5ff7d2" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#5ff7d2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect width="1200" height="675" fill="url(#r)"/>
+  <g opacity=".32" stroke="#9fb5c8" stroke-width="1">
+    <path d="M0 75H1200M0 150H1200M0 225H1200M0 300H1200M0 375H1200M0 450H1200M0 525H1200M0 600H1200"/>
+    <path d="M75 0V675M150 0V675M225 0V675M300 0V675M375 0V675M450 0V675M525 0V675M600 0V675M675 0V675M750 0V675M825 0V675M900 0V675M975 0V675M1050 0V675M1125 0V675"/>
+  </g>
+  <rect x="76" y="72" width="1048" height="531" rx="34" fill="#050914" fill-opacity=".58" stroke="#5ff7d2" stroke-opacity=".32"/>
+  <text x="110" y="180" fill="#5ff7d2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="800" letter-spacing="4">PROJECT EVIDENCE</text>
+  <text x="110" y="302" fill="#ecf6ff" font-family="Inter, system-ui, sans-serif" font-size="78" font-weight="900">ESP32 HaleHound</text>
+  <text x="114" y="374" fill="#9fb5c8" font-family="Inter, system-ui, sans-serif" font-size="34">Board photo / UI screenshot</text>
+  <text x="110" y="510" fill="#678095" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="25">Drop your PNG/PDF here and update app.js</text>
+</svg>
