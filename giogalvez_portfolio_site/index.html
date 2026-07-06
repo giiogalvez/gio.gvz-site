@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giovanni Galvez Portfolio</title>
+  <meta name="description" content="Giovanni Galvez portfolio, resume, professional timeline, projects, and contact information." />
+  <link rel="stylesheet" href="style.css?v=1.0" />
+  <script src="app.js?v=1.0" defer></script>
+</head>
+<body>
+  <aside class="sidebar" aria-label="Main navigation">
+    <h1>Giovanni<br/>Galvez</h1>
+    <nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#timeline" class="nav-link">Timeline</a>
+      <a href="#resume" class="nav-link">Résumé</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="home" class="panel" aria-label="Home section">
+      <div class="panel-header hero-card">
+        <h1>Hi, I'm Giovanni&nbsp;Galvez</h1>
+        <p class="hero-text">
+          USMC intelligence veteran and security analyst turned cybersecurity professional focusing on threat intelligence and network security. With hands-on experience designing segmented networks, managing virtualized environments and applying industry frameworks, I am committed to securing infrastructure and mitigating risks.
+        </p>
+        <a href="#resume" class="btn">Learn&nbsp;More</a>
+      </div>
+    </section>
+
+    <section id="timeline" class="panel" aria-label="Professional Timeline">
+      <div class="panel-header">
+        <h1>Professional Timeline</h1>
+        <p>A brief overview of professional experiences that helped shape my career.</p>
+
+        <div class="timeline-horizontal" role="tablist" aria-label="Employers">
+          <button type="button" class="timeline-btn active" role="tab" aria-selected="true" data-role="usmc">
+            <span class="company">U.S. Marine Corps</span>
+            <span class="dates">Jan 2015 – Jan 2020</span>
+          </button>
+          <button type="button" class="timeline-btn" role="tab" aria-selected="false" data-role="raytheon">
+            <span class="company">Raytheon</span>
+            <span class="dates">Oct 2022 – Dec 2023</span>
+          </button>
+          <button type="button" class="timeline-btn" role="tab" aria-selected="false" data-role="triadic">
+            <span class="company">Triadic Security Solutions</span>
+            <span class="dates">Jan 2025 – Present</span>
+          </button>
+        </div>
+
+        <div class="timeline-details" aria-live="polite">
+          <h3 id="job-title">Security Manager &amp; Intelligence Analyst</h3>
+          <p id="job-description">
+            Oversaw clearance and security compliance for 1,100+ service members, delivered security briefings, and maintained operational readiness. Led intelligence collection and multi-source threat assessments, conducted OSINT/SIPR research supporting tactical planning and decision-making, and supervised UAS operations during ISR missions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="panel" aria-label="Resume section">
+      <div class="panel-header">
+        <h1>Résumé</h1>
+        <p>Here’s an overview of my skills, education and certifications. Download my full résumé for more details.</p>
+
+        <div class="resume-content">
+          <div class="resume-section">
+            <h2>Skills</h2>
+            <ul>
+              <li><strong>Networking:</strong> VLAN segmentation, DHCP/DNS, VPN configuration, IDS/IPS, NAT and routing protocols.</li>
+              <li><strong>Operating Systems:</strong> Arch Linux, Ubuntu, Ubuntu Server, Mint, Red Hat, Kali, BlackArch, Windows Server 2016/2025, macOS.</li>
+              <li><strong>Programming:</strong> Python for automation and scripting, C, and the ability to read and interpret HTML, CSS and Java.</li>
+              <li><strong>Security Tools:</strong> Wazuh, Kali Linux, Wireshark, Metasploit, Nmap, Burp Suite, T-Pot, Security Onion and OPNsense.</li>
+              <li><strong>Personal:</strong> Strong organizational, analytical and problem-solving skills with effective communication and customer service.</li>
+            </ul>
+          </div>
+
+          <div class="resume-section">
+            <h2>Education</h2>
+            <ul>
+              <li><strong>ECPI University – Associate’s of Science in Cybersecurity</strong> <span>Feb 2024 – Jul 2025</span></li>
+              <li><strong>ECPI University – Bachelor’s of Science in Cybersecurity</strong> <span>Sep 2025 – Present</span></li>
+            </ul>
+
+            <h2>Certifications</h2>
+            <ul>
+              <li>CompTIA Security+ — Earned</li>
+              <li>ISC2 Certified in Cybersecurity (CC) — Jan 2025</li>
+              <li>NVIDIA Fundamentals of Deep Learning — Jun 2024</li>
+              <li>NVIDIA Applications of AI for Anomaly Detection — Aug 2024</li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="Giovanni-Resume.pdf" class="btn" download>Download&nbsp;PDF</a>
+      </div>
+    </section>
+
+    <section id="projects" class="panel" aria-label="Projects section">
+      <div class="panel-header">
+        <h1>Projects &amp; Accomplishments</h1>
+        <p>These initiatives demonstrate my hands-on skills and continuous learning.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h2>Home Lab Implementation &amp; Threat Simulation</h2>
+            <p>Engineered a virtual security lab using Proxmox and multiple virtual machines for offensive and defensive testing. Deployed honeypots, IDS/IPS and open Wi-Fi bait networks for traffic analysis and real-time threat detection.</p>
+          </article>
+
+          <article class="project-card">
+            <h2>Capture The Flag Participant</h2>
+            <p>Competed in multiple CTF events. Achievements include Cyber Sentinel, Cyber Madness, and Cyber Skyline rankings across individual and team competitions.</p>
+          </article>
+
+          <article class="project-card">
+            <h2>Phi Theta Kappa Honor Society</h2>
+            <p>Recognized for academic excellence and a commitment to leadership and service through induction into the Phi Theta Kappa honor society.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel" aria-label="Contact section">
+      <div class="panel-header">
+        <h1>Contact</h1>
+        <p>Interested in connecting? I’d love to hear from you.</p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:gvzgio@gmail.com">gvzgio@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+17579285798">(757) 928-5798</a></p>
+          <p><strong>LinkedIn:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/giovanniagalvez/">linkedin.com/in/giovanniagalvez</a></p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Hello, Giovanni! I’d like to connect about..."></textarea>
+
+          <button type="submit" class="btn">Send&nbsp;Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
