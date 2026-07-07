@@ -1,2 +1,0 @@
-Replace this placeholder with your real resume PDF.
-Then update the Resume link in index.html to point to your PDF filename.

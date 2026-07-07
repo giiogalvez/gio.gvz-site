@@ -36,9 +36,7 @@ const terminalLines = [
   'mapping homelab architecture... done',
   'indexing project evidence... done',
   'compiling briefing notes... done',
-  'operator vault info: username: tss_operator',
-  'retrieving user data and central processing',
-  'operator vault info: password: receipts_or_it_didnt_happen',
+  'operator vault clue: inspect source, css, console',
   'ready: investigate | harden | brief | build'
 ];
 
@@ -74,62 +72,50 @@ const modalData = {
     title: 'Threat Intelligence Daily Console',
     body: 'A practical analyst workflow for turning cyber news, advisories, malware reports, and vulnerability chatter into a daily intelligence product. The value is not the feed list. The value is source discipline, duplicate reduction, triage logic, and the final briefing that tells leadership what changed, why it matters, and what action is recommended.',
     tags: ['Python', 'Tkinter', 'RSS', 'CISA', 'MITRE', 'Analyst Workflow'],
-    evidence: [
-      { type: 'image', src: 'assets/evidence/cti-console-placeholder.svg', title: 'Console screenshot', caption: 'Replace with a screenshot of the working CTI console.' },
-      { type: 'image', src: 'assets/evidence/briefing-placeholder.svg', title: 'Briefing format', caption: 'Replace with a redacted daily brief or sample intelligence note.' }
-    ]
+    evidence: []
   },
   'tss-lab': {
     kicker: 'Infrastructure security project',
     title: 'TSS Homelab Security Architecture',
     body: 'A segmented lab designed to demonstrate real cybersecurity muscle: routing, firewall rules, NAT, isolated ranges, Windows domain services, Linux hosts, and controlled testing zones. It proves more than tool familiarity. It shows systems thinking, change control, documentation, and the ability to explain how traffic should move before asking tools what happened.',
     tags: ['Palo Alto', 'Windows Server', 'Linux', 'VLANs', 'Firewall Policy', 'Active Directory'],
-    evidence: [
-      { type: 'image', src: 'assets/evidence/lab-map-placeholder.svg', title: 'Network diagram', caption: 'Add a clean homelab diagram or redacted firewall/network map.' },
-      { type: 'image', src: 'assets/evidence/firewall-placeholder.svg', title: 'Firewall proof', caption: 'Add redacted policy, NAT, or interface screenshots.' }
-    ]
+    evidence: []
   },
   'halehound': {
     kicker: 'Cyber hardware project',
     title: 'ESP32 HaleHound Field Toolkit',
     body: 'A hands-on ESP32 project focused on building, flashing, validating, and documenting a compact cyber hardware workflow. This is the stronger public portfolio piece right now because it is real, current, and provable. The larger all-in-one handheld remains a design log until the physical build catches up with the concept.',
     tags: ['ESP32', 'HaleHound', 'Hardware', 'Flashing Logs', 'Field Notes', 'Design Log'],
-    evidence: [
-      { type: 'image', src: 'assets/evidence/halehound-placeholder.svg', title: 'Device proof', caption: 'Add your ESP32/HaleHound board photo or UI screenshot.' },
-      { type: 'image', src: 'assets/evidence/handheld-concept-placeholder.svg', title: 'Concept design', caption: 'Add sketches/renders for the all-in-one handheld as concept evidence.' }
-    ]
+    evidence: []
   },
   'creator-shield': {
     kicker: 'Security service concept',
     title: 'Creator Account Protection Framework',
     body: 'A scalable security offer for creators whose public visibility makes them easier to phish, stalk, impersonate, and doxx. The framework combines account hardening, password manager onboarding, MFA review, public exposure checks, impersonation monitoring, emergency recovery planning, and recurring check-ins. The business value is simple: protect revenue, identity, and reputation.',
     tags: ['OSINT', 'MFA', 'Account Security', 'Monitoring', 'Phishing Defense', 'Service Design'],
-    evidence: [
-      { type: 'image', src: 'assets/evidence/creator-shield-placeholder.svg', title: 'Framework sample', caption: 'Add a sanitized intake form, checklist, or sample dashboard mockup.' }
-    ]
+    evidence: []
   },
   'campus-program': {
     kicker: 'Leadership and education project',
     title: 'Cyber Club & CTF Program Proposal',
     body: 'A practical campus program proposal that moves students from passive classes into active cybersecurity development. It centers on peer-led labs, NCL preparation, scrimmages, conference participation, mentor loops, hardware access, and documentation. The point is not to make everyone elite overnight. The point is to create an environment where students practice consistently and fail safely.',
     tags: ['Leadership', 'CTF', 'Mentorship', 'Program Design', 'Student Development'],
-    evidence: [
-      { type: 'image', src: 'assets/evidence/campus-program-placeholder.svg', title: 'Proposal proof', caption: 'Add proposal screenshots, agenda, or redacted school-facing materials.' }
-    ]
+    evidence: []
   },
   'ctf-notes': {
-    kicker: 'Applied security writeups',
-    title: 'Capture-the-Flag Field Notes',
-    body: 'A structured writeup collection focused on transferable methodology: what was observed, what was tested, what failed, what worked, and what should be remembered next time. Strong CTF documentation demonstrates curiosity, discipline, command-line fluency, and the ability to explain technical steps without hiding behind buzzwords.',
-    tags: ['Linux', 'Web', 'NFC', 'Wi-Fi', 'Reverse Engineering', 'Documentation'],
+    kicker: 'Competition evidence',
+    title: 'Cyber Skyline / NCL Competition Record',
+    body: 'Repeated NCL performance across OSINT, cryptography, password cracking, log analysis, network traffic analysis, forensics, scanning, web exploitation, and enumeration under timed conditions. This is not presented as “I played CTFs.” It is presented as evidence of analyst behavior: triage, persistence, investigation, documentation, and technical range.',
+    tags: ['NCL', 'Cyber Skyline', 'OSINT', 'Traffic Analysis', 'Forensics', 'Web Exploitation', 'Enumeration'],
     evidence: [
-      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2026-team.png', title: 'NCL Spring 2026 Team', caption: '7th place, 3000/3000 points, 100% completion.' },
-      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-individual.png', title: 'NCL Fall 2025 Individual', caption: '109th place, 2715/3000 points, 92.7% completion.' },
-      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-team.png', title: 'NCL Fall 2025 Team', caption: '35th place, 2795/3015 points, 90.1% completion.' },
-      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2025-team.png', title: 'NCL Spring 2025 Team', caption: '46th place, 2565/3000 points, 91.1% completion.' }
-    ],
-    actions: [
-      { label: 'Open full CTF evidence vault', href: 'vault/reports/ctf-results.html' }
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2026-team.png', title: 'NCL Spring 2026 Team', caption: '7th out of 341 · 3000/3000 points · 100% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-individual.png', title: 'NCL Fall 2025 Individual', caption: '109th out of 7,876 · 2715/3000 points · 92.7% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-team.png', title: 'NCL Fall 2025 Team', caption: '35th out of 4,214 · 2795/3015 points · 90.1% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2026-individual.png', title: 'NCL Spring 2026 Individual', caption: '350th out of 7,011 · 2660/3000 points · 92.3% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2025-team.png', title: 'NCL Spring 2025 Team', caption: '46th out of 4,779 · 2565/3000 points · 91.1% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2025-individual.png', title: 'NCL Spring 2025 Individual', caption: '261st out of 8,575 · 2370/3000 points · 84.1% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2024-team.png', title: 'NCL Fall 2024 Team', caption: '53rd out of 4,894 · 2695/3100 points · 90.2% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2024-individual.png', title: 'NCL Fall 2024 Individual', caption: '555th out of 8,487 · 2015/3000 points · 72.2% completion.' }
     ]
   }
 };
