@@ -36,7 +36,9 @@ const terminalLines = [
   'mapping homelab architecture... done',
   'indexing project evidence... done',
   'compiling briefing notes... done',
-  'operator vault clue: inspect source, css, console',
+  'operator vault info: username: tss_operator',
+  'retrieving user data and processing',
+  'operator vault info: password: receipts_or_it_didnt_happen',
   'ready: investigate | harden | brief | build'
 ];
 
