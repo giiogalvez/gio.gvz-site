@@ -121,11 +121,13 @@ const modalData = {
     body: 'A structured writeup collection focused on transferable methodology: what was observed, what was tested, what failed, what worked, and what should be remembered next time. Strong CTF documentation demonstrates curiosity, discipline, command-line fluency, and the ability to explain technical steps without hiding behind buzzwords.',
     tags: ['Linux', 'Web', 'NFC', 'Wi-Fi', 'Reverse Engineering', 'Documentation'],
     evidence: [
-      { type: 'image', src: 'assets/evidence/ctf-results-placeholder.svg', title: 'Result report', caption: 'Replace with Cyber Skyline, NCL, or event scoreboard/report PNG.' },
-      { type: 'image', src: 'assets/evidence/ctf-writeup-placeholder.svg', title: 'Writeup sample', caption: 'Replace with a redacted writeup screenshot or command evidence.' }
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2026-team.png', title: 'NCL Spring 2026 Team', caption: '7th place, 3000/3000 points, 100% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-individual.png', title: 'NCL Fall 2025 Individual', caption: '109th place, 2715/3000 points, 92.7% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-fall-2025-team.png', title: 'NCL Fall 2025 Team', caption: '35th place, 2795/3015 points, 90.1% completion.' },
+      { type: 'image', src: 'assets/evidence/ctf/ncl/ncl-spring-2025-team.png', title: 'NCL Spring 2025 Team', caption: '46th place, 2565/3000 points, 91.1% completion.' }
     ],
     actions: [
-      { label: 'Add report PDF later', href: '#', disabled: true }
+      { label: 'Open full CTF evidence vault', href: 'vault/reports/ctf-results.html' }
     ]
   }
 };

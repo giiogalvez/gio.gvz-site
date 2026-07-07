@@ -89,3 +89,39 @@ Example:
 ```text
 https://giiogalvez.github.io/gio.gvz-site/vault/
 ```
+
+
+## v3.1 note
+
+This version patches the lab diagram responsiveness so the branch cards wrap cleanly instead of forcing four columns inside a narrow grid area.
+
+## v3.2: Adding CTF result screenshots
+
+CTF screenshots belong in:
+
+```text
+assets/evidence/ctf/ncl/
+```
+
+The current package includes these public-safe Cyber Skyline / NCL result screenshots:
+
+```text
+assets/evidence/ctf/ncl/ncl-fall-2024-team.png
+assets/evidence/ctf/ncl/ncl-fall-2024-individual.png
+assets/evidence/ctf/ncl/ncl-spring-2025-team.png
+assets/evidence/ctf/ncl/ncl-spring-2025-individual.png
+assets/evidence/ctf/ncl/ncl-fall-2025-team.png
+assets/evidence/ctf/ncl/ncl-fall-2025-individual.png
+assets/evidence/ctf/ncl/ncl-spring-2026-team.png
+assets/evidence/ctf/ncl/ncl-spring-2026-individual.png
+```
+
+The homepage CTF modal references the strongest screenshots in `app.js` under `modalData['ctf-notes'].evidence`.
+
+The full vault page is:
+
+```text
+vault/reports/ctf-results.html
+```
+
+GitHub Pages is public static hosting. Do not upload unredacted flags, private writeups, sensitive tooling output, private IPs, customer data, or anything you would not want indexed or inspected.
