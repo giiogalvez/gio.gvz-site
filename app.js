@@ -86,7 +86,7 @@ const modalData = {
   'halehound': {
     kicker: 'Cyber hardware project',
     title: 'ESP32 HaleHound Field Toolkit',
-    body: 'A hands-on ESP32 project focused on building, flashing, validating, and documenting a compact cyber hardware workflow. This is the stronger public portfolio piece right now because it is real, current, and provable. The larger all-in-one handheld remains a design log until the physical build catches up with the concept.',
+    body: 'A hands-on ESP32 project focused on building, flashing, validating, and documenting a compact cyber hardware workflow. This is actively a working and utilized hardware right now because it is. A larger all-in-one handheld remains in the design phase until the physical build catches up with the concept.',
     tags: ['ESP32', 'HaleHound', 'Hardware', 'Flashing Logs', 'Field Notes', 'Design Log'],
     evidence: []
   },
@@ -99,8 +99,8 @@ const modalData = {
   },
   'campus-program': {
     kicker: 'Leadership and education project',
-    title: 'Cyber Club & CTF Program Proposal',
-    body: 'A practical campus program proposal that moves students from passive classes into active cybersecurity development. It centers on peer-led labs, NCL preparation, scrimmages, conference participation, mentor loops, hardware access, and documentation. The point is not to make everyone elite overnight. The point is to create an environment where students practice consistently and fail safely.',
+    title: 'Cyber Club & CTF Program',
+    body: 'A practical campus program that moves students from passive classes into active cybersecurity development. It centers on peer-led labs, NCL preparation, scrimmages, conference participation, mentor loops, hardware access, and documentation. The point is not to make everyone elite overnight. The point is to create an environment where students practice consistently and fail safely.',
     tags: ['Leadership', 'CTF', 'Mentorship', 'Program Design', 'Student Development'],
     evidence: []
   },
